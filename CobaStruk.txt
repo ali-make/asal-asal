@@ -1,0 +1,59 @@
+Program Struk Belanja Pizza / Tax Invoice
+----------------------------------------
+
+Toko Penjualan :
+Domino's Pizza Galuh Mas 91954
+----------------------------------------
+
+Alamat Domino's Pizza Pusat :
+Sahid Sudirman Center Lt.27
+Jl. Jend Sudirman Kav.86 Jakarta
+ABN: NPWP:02.505.566.6-022.000
+----------------------------------------
+
+Nama PT :
+PT. Dom Pizza Indonesia
+www.dominos.co.id
+----------------------------------------
+
+Tambahan :
+Tax 10%
+Sertai Nama Petugas Kasir
+Sertai Nomor Order
+----------------------------------------
+
+Menu Makanan : 
+1. Pizza Mania :
+   a. Chili Chicken
+   b. Chicken Sausage
+   c. Beef Rasher
+
+   Harga :
+   Personal (P) Rp.14.546
+
+2. Super Value Pizza
+   a. Margherita
+   b. Beef Delight
+   c. Chicken Pepperoni Feast
+   d. Cheesy Sausage
+   e. Sambal Beef
+
+   Harga :
+   Personal (P) Rp.18.637
+   Medium (M) Rp.41.364
+   Large (L) Rp.59.546
+
+3. Favourite Pizza
+   a. Chicken Delight
+   b. Tuna Delight
+   c. Beef Pepperoni Feast
+   d. Meat & Meat
+   e. Double Beef Burger
+
+   Harga :
+   Personal (P) Rp.33.182
+   Medium (M) Rp.65.909
+   Large (L) Rp.86.819
+
+----------------------------------------
+
