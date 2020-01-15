@@ -1,13 +1,15 @@
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 int kategori, unit, harga;
 string kategori_1, meal, meal_1;
+char ukuran;
 
 void line()
 {
-    std::cout << "----------------------------------------" << std::endl;
+    cout << "----------------------------------------" << endl;
 }
 
 void toko() 
@@ -54,38 +56,13 @@ int main()
     //cout << "Program Struk Belanja!" << endl;
     PizzaMania();
     SuperValuePizza();
-    cout << "Pilih Kategori               : "; cin >> kategori;
-    if(kategori == 1)
-    {
-        kategori_1 = "Pizza Mania";
-    } else {
-        kategori_1 = "Super Value Pizza";
-    }
-    cout << "Pilih Pesanan                : "; cin >> meal;
-    if(meal == "1A" || meal == "1a"){
-        meal_1 = "Chili Chicken";
-    } else if(meal == "2A" || meal == "2a"){
-        meal_1 = "Chicken Sausage";
-    } else {
-        meal_1 = "Beef Rasher";
-    }
-
-    if(meal == "1B" || meal == "1b"){
-        meal_1 = "Margherita";
-    } else if(meal == "2B" || meal == "2b"){
-        meal_1 = "Beef Delight";
-    } else if(meal == "3B" || meal == "3b"){
-        meal_1 = "Chicken Pepperoni Feast";
-    } else if(meal == "4B" || meal == "4b"){
-        meal_1 = "Cheesy Sausage";
-    } else {
-        meal_1 = "Sambal Beef";
-    }
-
-    cout << "Berapa Unit                  : "; cin >> unit; 
+    cout << "Pesanan                      : "; cin >> meal;
+    cout << "Unit                         : "; cin >> unit;
+    cout << "Ukuran                       : "; cin >> ukuran; 
     cout << endl;
 
-    cout << kategori_1 << endl;
-    cout << meal_1 << endl;
+    cout << unit << " " << ukuran;
+    cout << setiosflags(ios::left) << setw(20) << harga << endl;
+    cout << '(' << meal_1 << ')' << endl;
     return 0;
 }
