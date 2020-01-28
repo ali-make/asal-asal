@@ -3,9 +3,8 @@
 #include <iomanip>
 
 using namespace std;
-int kategori, unit, harga;
-string kategori_1, meal, meal_1;
-char ukuran;
+int unit, harga, ukuran;
+string meal, meal_1, ukuran_1;
 
 void line()
 {
@@ -33,22 +32,27 @@ void PT()
 // Kategori Menu Pizza
 void PizzaMania()
 {
-    cout << "[1]PIZZA MANIA" << endl;
+    cout << "[A]PIZZA MANIA" << endl;
     line();
-    cout << "[1A]Chili Chicken" << endl;
-    cout << "[2A]Chicken Sausage" << endl;
-    cout << "[3A]Beef Rasher" << endl << endl;
+    cout << "[A1]Chili Chicken" << endl;
+    cout << "[A2]Chicken Sausage" << endl;
+    cout << "[A3]Beef Rasher" << endl << endl;
 }
 
 void SuperValuePizza()
 {
-    cout << "[2]SUPER VALUE PIZZA" << endl;
+    cout << "[B]SUPER VALUE PIZZA" << endl;
     line();
-    cout << "[1B]Margherita" << endl;
-    cout << "[2B]Beef Delight" << endl;
-    cout << "[3B]Chicken Pepperoni Feast" << endl;
-    cout << "[4B]Cheesy Sausage" << endl;
-    cout << "[5B]Sambal Beef" << endl << endl;
+    cout << "[B1]Margherita" << endl;
+    cout << "[B2]Beef Delight" << endl;
+    cout << "[B3]Chicken Pepperoni Feast" << endl;
+    cout << "[B4]Cheesy Sausage" << endl;
+    cout << "[B5]Sambal Beef" << endl << endl;
+}
+
+void ukur(){
+    cout << "Ukuran                       : ";
+    cin >> ukuran;
 }
 
 int main()
@@ -57,12 +61,51 @@ int main()
     PizzaMania();
     SuperValuePizza();
     cout << "Pesanan                      : "; cin >> meal;
+    if(meal == "A1" || meal == "a1"){
+        meal_1 = "CHILI CHICKEN";
+        harga = 14546;
+    } else if(meal == "A2" || meal == "a2"){
+        meal_1 = "CHICKEN SAUSAGE";
+        harga = 14546;
+    } else if(meal == "A3" || meal == "a3"){
+        meal_1 = "BEEF RASHER";
+        harga = 14546;
+    } else if(meal == "B1" || meal == "b1"){
+        meal_1 = "MARGHERITA";
+        ukur();
+        switch(ukuran){
+            case 1:
+            ukuran_1 = "PERSONAL";
+            harga = 18637;
+            case 2:
+            ukuran_1 = "MEDIUM";
+            harga = 41364;
+            case 3:
+            ukuran_1 = "LARGE";
+            harga = 59546;
+        }
+    } else if(meal == "B2" || meal == "b2"){
+        meal_1 = "BEEF DELIGHT";
+        ukur();
+        switch (ukuran)
+        {
+        case 1:
+            ukuran_1 = "PERSONAL";
+            harga = 18637;
+        case 2:
+            ukuran_1 = "MEDIUM";
+            harga = 41364;
+        case 3:
+            ukuran_1 = "LARGE";
+            harga = 59546;
+        }
+    }
+
     cout << "Unit                         : "; cin >> unit;
-    cout << "Ukuran                       : "; cin >> ukuran; 
     cout << endl;
 
-    cout << unit << " " << ukuran;
-    cout << setiosflags(ios::left) << setw(20) << harga << endl;
+    cout << unit << " " << ukuran << setw(20);
+    cout << setiosflags(ios::left) << harga << endl;
     cout << '(' << meal_1 << ')' << endl;
     return 0;
 }
