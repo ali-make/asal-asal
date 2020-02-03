@@ -31,7 +31,8 @@ int main()
     jHarga = 0;
     uBayar = 0;
     uKembali = 0;
-    system("clear");
+    //system("clear");//for linux
+    system("cls");//for windows
     kop();
     garis();
     cout << "SELAMAT DI EUNOIA ARTS" << endl << endl;
@@ -67,7 +68,8 @@ int main()
         }
     }
 
-    system("clear");
+    //system("clear");//for linux
+    system("cls");//for windows
     kopAkhir();
     garis();
     cout << endl;
@@ -102,8 +104,8 @@ int main()
         goto awal;
     } else {
         cout << "Terimakasih Telah Berbelanja di sini <3" << endl;
-        return 0;
     }
+    return 0;
 }
 
 void kopAkhir(){
