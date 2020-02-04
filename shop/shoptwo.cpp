@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <stdlib.h>
 #include <string>
+#include <conio.h>
 using namespace std;
 
 void kop()
@@ -102,6 +103,7 @@ int main()
         goto awal;
     } else {
         cout << "Terimakasih telah berbelanja di toko kami~ <3" << endl;
+        getch();
     }
 
     return 0;
