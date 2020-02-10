@@ -21,26 +21,72 @@ void line()
 void menu()
 {
     line();
-    cout << "\t\t\t[1]" << endl;
-    cout << ">>>>>>>>>>      MASUKAN UANG KAS      <<<<<<<<<<" << endl;
+    cout << "[1]             MASUKAN UANG KAS              [1]" << endl;
     line();
-    cout << "\t\t\t[2]" << endl;
-    cout << ">>>>>>>>>  DAFTAR PENGELUARAN UANG KAS  <<<<<<<<<" << endl;
+    cout << "[2]        DAFTAR PENGELUARAN UANG KAS        [2]" << endl;
     line();
-    cout << "\t\t\t[3]" << endl;
-    cout << ">>>>>>>>>>      STATUS KAS MAGMA      <<<<<<<<<<" << endl;
-    line();
-    cout << "\t\t       [EXIT]" << endl;
+    cout << "[3]             STATUS KAS MAGMA              [3]" << endl;
     line();
 }
 
 int main()
 {
+    int no;
+    char answer;
+    start:
+    system("clear");
+
     line();
     kop();
     line();
     cout << endl;
     menu();
+    cout << endl;
+    cout << "PILIH MENU TERSEDIA" << " NO : "; cin >> no;
+    if(no == 1)
+    {
+        system("clear");
+        line();
+        kop();
+        line();
+        cout << endl;
+        cout << "menu satu" << endl;
+    }
+    else if(no == 2)
+    {
+        system("clear");
+        line();
+        kop();
+        line();
+        cout << endl;
+        cout << "menu dua" << endl;
+    }
+    else if(no == 3)
+    {
+        system("clear");
+        line();
+        kop();
+        line();
+        cout << endl;
+        cout << "menu tiga" << endl;
+    }
+    else
+    {
+        system("clear");
+        line();
+        kop();
+        line();
+        cout << endl;
+        cout << "mEnU tIdaK tErsDia!!" << endl;
+        cout << "Anda Keluar dari Program..." << endl;
+    }
 
+    cout << endl;
+    cout << "Kembali ke start [Y/n] : "; cin >> answer;
+    if(answer == 'y' || answer == 'Y')
+    {
+        goto start;
+    }
+    
     return 0;
 }
