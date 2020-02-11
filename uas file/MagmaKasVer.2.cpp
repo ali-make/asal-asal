@@ -5,6 +5,7 @@
 #include <string>
 #include <stdlib.h>
 #include <iomanip>
+#include <conio.h>
 using namespace std;
 
 void kop()
@@ -34,7 +35,7 @@ int main()
     int no;
     char answer;
     start:
-    system("clear");
+    system("cls");
 
     line();
     kop();
@@ -45,7 +46,7 @@ int main()
     cout << "PILIH MENU TERSEDIA" << " NO : "; cin >> no;
     if(no == 1)
     {
-        system("clear");
+        system("cls");
         line();
         kop();
         line();
@@ -54,7 +55,7 @@ int main()
     }
     else if(no == 2)
     {
-        system("clear");
+        system("cls");
         line();
         kop();
         line();
@@ -63,7 +64,7 @@ int main()
     }
     else if(no == 3)
     {
-        system("clear");
+        system("cls");
         line();
         kop();
         line();
@@ -72,7 +73,7 @@ int main()
     }
     else
     {
-        system("clear");
+        system("cls");
         line();
         kop();
         line();
@@ -88,5 +89,6 @@ int main()
         goto start;
     }
     
+    getch();
     return 0;
 }
